@@ -55,17 +55,19 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 
     implementation(files("/Users/vladzaharinskij/AndroidStudioProjects/CryptoWallet/app/libs/dynamic-sdk-android.aar"))
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
-    implementation("androidx.webkit:webkit:1.8.0")
-    implementation("com.squareup.okhttp3:okhttp:4.12.0")
-    implementation("androidx.browser:browser:1.7.0")
-    implementation("androidx.datastore:datastore-preferences:1.1.1")
-    implementation("com.google.crypto.tink:tink-android:1.15.0")
+    implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.kotlinx.serialization.json)
+    implementation(libs.androidx.webkit)
+    implementation(libs.okhttp)
+    implementation(libs.androidx.browser)
+    implementation(libs.androidx.datastore.preferences)
+    implementation(libs.tink.android)
 
-    // Поддержка входа через Passkeys и Google
-    implementation("androidx.credentials:credentials:1.2.2")
-    implementation("androidx.credentials:credentials-play-services-auth:1.2.2")
-    implementation("com.google.android.gms:play-services-auth:20.7.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.6.2")
+    implementation(libs.androidx.credentials)
+    implementation(libs.credentials.play.services.auth)
+    implementation(libs.play.services.auth)
+    implementation(libs.lifecycle.runtime.compose)
+
+    implementation(libs.koin.androidx.compose)
+    implementation(libs.koin.android)
 }
