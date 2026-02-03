@@ -1,0 +1,40 @@
+# Быстрый фильтр для Android/IntelliJ
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+/google-services.json
+
+# Файлы сборки (на уровне проекта)
+build/
+/app/build/
+
+# Kotlin
+*.kotlin_module
+
+# Локальные файлы конфигурации (пароли, SDK path)
+local.properties
+
+# Log файлы
+*.log
+
+# Специально для macOS
+.DS_Store
+
+# Файлы Gradle
+.gradle/
+build/
+
+# Для твоих AAR-файлов
+# ВАЖНО: Мы НЕ игнорируем libs/*.aar, так как они нужны для сборки проекта в GitHub
+!/app/libs/*.aar
