@@ -10,8 +10,10 @@ import com.zaharinskijvlad.cryptowallet.domain.usecase.GetWalletAddressUseCase
 import com.zaharinskijvlad.cryptowallet.domain.usecase.GetWalletBalanceUseCase
 import com.zaharinskijvlad.cryptowallet.domain.usecase.LogoutUseCase
 import com.zaharinskijvlad.cryptowallet.domain.usecase.SendOtpUseCase
+import com.zaharinskijvlad.cryptowallet.domain.usecase.SendTransactionUseCase
 import com.zaharinskijvlad.cryptowallet.domain.usecase.VerifyOtpUseCase
 import com.zaharinskijvlad.cryptowallet.presentation.login.LoginViewModel
+import com.zaharinskijvlad.cryptowallet.presentation.transaction.SendTransactionViewModel
 import com.zaharinskijvlad.cryptowallet.presentation.wallet.WalletViewModel
 import org.koin.core.module.dsl.viewModel
 import org.koin.dsl.module
@@ -33,4 +35,8 @@ val appModule = module {
     factory { GetNetworkUseCase(get()) }
 
     viewModel { WalletViewModel(get(), get(), get(), get()) }
+
+    factory { SendTransactionUseCase(get()) }
+
+    viewModel { SendTransactionViewModel(get()) }
 }
