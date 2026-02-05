@@ -21,6 +21,7 @@ okhttp = "4.12.0"
 playServicesAuth = "20.7.0"
 tinkAndroid = "1.15.0"
 webkit = "1.8.0"
+lifecycleViewmodelKtx = "2.10.0"
 
 [libraries]
 androidx-browser = { module = "androidx.browser:browser", version.ref = "browser" }
@@ -50,6 +51,7 @@ lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-com
 okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
 play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
 tink-android = { module = "com.google.crypto.tink:tink-android", version.ref = "tinkAndroid" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

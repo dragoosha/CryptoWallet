@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Crypto Wallet</string>
+    <string name="welcome_cryptowallet">Welcome to CryptoWallet</string>
 </resources>
